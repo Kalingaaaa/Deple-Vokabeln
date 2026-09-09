@@ -9,7 +9,7 @@
 module.exports = async function handler(req, res) {
   const KV_URL = process.env.KV_REST_API_URL;
   const KV_TOKEN = process.env.KV_REST_API_TOKEN;
-  const SECRET = process.env.VOCAB_PASSWORD;
+  const SECRET = process.env.deplevocab;
 
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
